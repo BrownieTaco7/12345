@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    font: normal 28px "Oswald", sans-serif;
+    color: #555;
+}
+
+ul, nav{
+    list-style: none;
+}
+
+nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 1;
+}
+
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+    margin-top: 10px;
+    color: white
+}
+
+section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px;
+}
+
+
+header{
+    font: normal 28px "Oswald", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding: 35px 100px 0;
+    -webkit-animation: 1s fadein 0.5s forwards;
+            animation: 1s fadein 0.5s forwards;
+    opacity: 0.5;
+    color: white;
+    text-transform: uppercase;
+}
+@-webkit-keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+
+header h2{
+    font: normal 28px "Oswald", sans-serif;
+    color: white;
+}
+
+header nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -15px;
+}
+header nav li{
+    margin: 0 15px;
+    color: white;
+}
+
+.hard{
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+.hard .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hard h1{
+    font: bold 60px "Oswald", sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
+.hard h3{
+    font: normal 28px "Oswald", sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
+
+p{
+    font: normal 25px "Oswald", sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
+
+
+
+
+.hero-content-area{
+    opacity: 0;
+    margin-top: 100px;
+    -webkit-animation: 1s slidefade 1s forwards;
+            animation: 1s slidefade 1s forwards;
+}
+@-webkit-keyframes slidefade{
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+@keyframes slidefade{
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
+/*quiz box*/
+ 
+body{
+  position: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.play-button {
+  padding: 10px 30px 10px 30px;
+  background-color: transparent;
+  border: 1px solid #041b45;
+  color: black;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.play-button:hover {
+  background-color: black;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.play-button i {
+  padding-left: 10px;
+}
+
+.game-main-stage-box {
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color:white;
+  padding: 50px;
+  width: 50%;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  z-index: 230;
+  background-color: #000;
+  height: 400vh;
+  color: #fff;
+  width: 100%;
+  display: none;
+}
+
+/* after submit the answer, the grade shows up*/ 
+#gameSummaryBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300vh;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  z-index: 210;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3 rem;
+}
+
+.showPointsAnim {
+  opacity: 0;
+  animation: showPointsAnimation 3s 1;
+}
+
+@keyframes showPointsAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#question-game form {
+  margin-bottom: 30px;
+}
+
+#question-game {
+  padding-left: 10px;
+  text-align: left;
+}
+
+
+
+#question-game h3 {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+#question-game h3:not(:first-child) {
+  margin-top: 30px;
+}
+
+#questions-submit {
+  width: 200px;
+  height: 50px;
+  font-size: 1 em;
+  border-radius: 35px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: all 0.7s;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-left: 10px;
+  float: left;
+}
+
+#questions-submit:hover {
+  background-color: #a8c4d0;
+  cursor: pointer;
+  border: 2px solid #a8c4d0;
+}
+
+#question-game .radio:hover .label {
+  color: #a8c4d0;
+}
+
+#question-game .radio:hover .label::before {
+  border: 5px solid #a8c4d0;
+}
+
+#question-game input[type="radio"] {
+  display: none;
+}
+
+#question-game input[type="radio"]:checked + .label {
+  color: #a8c4d0;
+}
+
+#question-game input[type="radio"]:checked + .label::before {
+  border: 5px solid #a8c4d0;
+  background: #fff;
+}
+
+#question-game .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.3rem 0;
+  color: #fff;
+  margin: 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+#question-game .label::before {
+  display: block;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 10px;
+  content: "";
+  border: 5px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+

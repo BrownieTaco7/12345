@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font: normal 28px "Oswald", sans-serif;
+    color: #555;
+}
+ul, nav{
+    list-style: none;
+}
+
+nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 1;
+}
+
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+    margin-top: 10px;
+    color: white
+}
+
+body {
+    background: #000;
+}
+
+header{
+    font: normal 28px "Oswald", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding: 35px 100px 0;
+    -webkit-animation: 1s fadein 0.5s forwards;
+            animation: 1s fadein 0.5s forwards;
+    opacity: 0.5;
+    color: white;
+    text-transform: uppercase;
+}
+@-webkit-keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+
+header h2{
+    font: normal 28px "Oswald", sans-serif;
+    color: white;
+}
+
+header nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -15px;
+}
+header nav li{
+    margin: 0 15px;
+    color: white;
+}
+
+.event-calendar {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.spacer {
+    border-bottom: 2px solid #e5e5e5
+}
+
+event-list {
+    display: block;
+    border-right: 2px solid #e5e5e5
+}
+
+.event {
+    text-decoration: none
+}
+
+.container {
+    height: 477px;
+}
+
+.event-container {
+    color: #ababab;
+    transition: all .2s ease;
+    background: black;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    padding-top: 10px;
+    padding-bottom: 15px
+}
+
+.event-container:hover {
+    border-left-width: 7px;
+    background: gray;
+}
+
+.date-container {
+    display: inline-block;
+    width: 2.3em;
+    padding-left: 13px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    margin-right: 6px;
+    font-family: Oswald;
+    font-weight: 700;
+    color: white;
+}
+
+.date {
+    font-size: 2.4em
+}
+
+.month {
+    display: block;
+    font-size: .4em;
+    font-weight: 400;
+    margin-top: -.8em;
+    text-transform: uppercase
+}
+
+.detail-container {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+    margin-left: 13px;
+    
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 2.4em;
+    color: white;
+}
+
+.description {
+    display: block;
+    font-size: 1.9em;
+    color: white;
+    text-align: center;
+}
+
+p {
+    display: block;
+    font-size: 1.9em;
+    color: white;
+    text-align: center;
+}
+
+lable {    
+    display: block;
+    font-size: 9.9em;
+    color: white;
+    text-align: center;
+  
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+}
+
+
+
+.form-group i {
+    position: absolute;
+    margin-left: -51px;
+    margin-top: 2px;
+    font-style: normal;
+}
+
+.form-group {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+}
+
+.sel {
+    position: relative;
+    left: 46px;
+    width: 145px;
+    padding: 0 2%;
+    margin: 0;
+}
+
+.sel option {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px;
+}

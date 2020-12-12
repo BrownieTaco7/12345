@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font: normal 28px "Oswald", sans-serif;
+    color: #555;
+}
+ul, nav{
+    list-style: none;
+}
+
+nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+a:hover{
+    opacity: 1;
+}
+
+a.btn{
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+    margin-top: 10px;
+    color: white
+}
+
+header{
+    font: normal 28px "Oswald", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding: 35px 100px 0;
+    -webkit-animation: 1s fadein 0.5s forwards;
+            animation: 1s fadein 0.5s forwards;
+    opacity: 0.5;
+    color: white;
+    text-transform: uppercase;
+}
+@-webkit-keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+
+header h2{
+    font: normal 28px "Oswald", sans-serif;
+    color: white;
+}
+
+header nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -15px;
+}
+header nav li{
+    margin: 0 15px;
+    color: white;
+}
+
+section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px;
+}
+
+.hero{
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+
+p{
+    font: normal 28px "Oswald", sans-serif;
+    position: relative;
+    font-size: 66px;
+    color: white;
+    width: 1077px;
+    text-align: center;
+}
+
+body {
+    background: #000;
+}
+
+
+.tijiao {
+    border: none;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    right: 300px;
+    transform: translate(-50%, -50%);
+    width: 553px;
+    height: 109px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    border-radius: 30px;
+    background-size: 400%;
+    font-size: 56px;
+    text-transform: uppercase;
+
+}
+
+.tijiao:hover {
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.tijiao::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    border-radius: 40px;
+    background-size: 400%;
+    opacity: -1;
+    transition: 0.5s;
+
+}
+
+.tijiao:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+}
+
+.hero{
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.hero h3{
+    font: normal 50px "Oswald", sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
